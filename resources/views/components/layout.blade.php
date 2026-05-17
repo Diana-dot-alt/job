@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joblist</title>
 </head>
 <body>
-
     <nav>
-        <x-nav-link href="{{ route('home') }}">Home</x-nav-link>
-        <x-nav-link href="{{ route('about') }}">About</x-nav-link>
-        <x-nav-link href="{{ route('jobs.show') }}">Jobs</x-nav-link>
-        <x-nav-link href="{{ route('contact') }}">Contact</x-nav-link>
-      
+        <x-nav-link href='/'>Home</x-nav-link>
+        <x-nav-link href='/about'>About</x-nav-link>
+        <x-nav-link href='/contact'>Contact</x-nav-link>
+        <x-nav-link href='/jobs'>Jobs</x-nav-link>
+
     </nav>
 
-    <div>
-        {{ $slot }}
-    </div>
-
+    {{ $slot }}
 </body>
 </html>
